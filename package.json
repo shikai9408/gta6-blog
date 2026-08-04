@@ -1,0 +1,13 @@
+{
+  "name": "gta6-blog",
+  "version": "1.0.0",
+  "description": "GTA 6 情报站 — 静态资讯博客",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs && node scripts/copy-static.mjs",
+    "dev": "npx serve ."
+  },
+  "dependencies": {
+    "marked": "^15.0.0"
+  }
+}
