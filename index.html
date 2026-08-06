@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="GTA 6 情报站 — 追踪《侠盗猎车手VI》最新消息、预告分析、地图爆料、角色解析。Vice City 的霓虹灯已经亮起。">
+  <meta name="keywords" content="GTA 6, GTA VI, Grand Theft Auto 6, 侠盗猎车手6, Vice City, 罪恶都市, Rockstar Games, Jason, Lucia">
+  <meta name="theme-color" content="#0A0A1A">
+  <meta property="og:title" content="GTA 6 情报站 — Vice City 在召唤">
+  <meta property="og:description" content="追踪《Grand Theft Auto VI》最新资讯、预告分析、地图爆料与角色解析。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://gta6-news.vercel.app/">
+  <title>GTA 6 情报站 — Vice City 在召唤</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/atom-one-dark.min.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23FF0055'/%3E%3Cstop offset='100%25' style='stop-color:%23FF00AA'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpolygon points='18,1 34,10 34,26 18,35 2,26 2,10' fill='none' stroke='url(%23g)' stroke-width='2.5'/%3E%3Ctext x='18' y='23' text-anchor='middle' fill='url(%23g)' font-family='sans-serif' font-weight='900' font-size='15'%3EVI%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+  <!-- Subtle floating light particles (CSS-only) -->
+  <div class="particles-layer" aria-hidden="true"></div>
+
+  <!-- ============================================
+       HEADER / NAVIGATION
+       ============================================ -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <svg class="logo-icon-svg" viewBox="0 0 42 42" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:#FF0055"/>
+              <stop offset="100%" style="stop-color:#FF00AA"/>
+            </linearGradient>
+            <filter id="logoGlow">
+              <feGaussianBlur stdDeviation="1.2" result="blur"/>
+              <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+          </defs>
+          <!-- Hexagon frame -->
+          <polygon points="21,2 38,12 38,30 21,40 4,30 4,12"
+                   fill="none" stroke="url(#logoGrad)" stroke-width="2.5"
+                   filter="url(#logoGlow)"/>
+          <!-- Inner VI text -->
+          <text x="21" y="27" text-anchor="middle"
+                fill="url(#logoGrad)" font-family="Inter,sans-serif"
+                font-weight="900" font-size="16" letter-spacing="-1">VI</text>
+        </svg>
+        <div class="logo-text">
+          GTA <span class="accent">情报站</span>
+          <span class="sub">◈ VICE CITY CALLING ◈</span>
+        </div>
+      </a>
+
+      <nav class="main-nav" id="main-nav">
+        <a href="index.html" class="nav-link active">首页</a>
+        <a href="#articles" class="nav-link">文章</a>
+        <a href="#newsletter" class="nav-link">订阅</a>
+        <a href="https://www.rockstargames.com/VI" class="nav-link" target="_blank" rel="noopener">官方站点 ↗</a>
+      </nav>
+
+      <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="菜单">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============================================
+       HERO SECTION
+       ============================================ -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <span class="hero-badge">🚁 持续追踪中</span>
+      <h1 class="hero-title">
+        欢迎来到<br>
+        <span class="gradient-text">Vice City</span> 情报前线
+      </h1>
+      <p class="hero-subtitle">
+        追踪《Grand Theft Auto VI》的每一条重磅消息。
+        从预告分析到地图爆料，从角色解析到游戏文化 —— 这里有你想要的一切。
+      </p>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="number" id="hero-total">6</div>
+          <div class="label">深度文章</div>
+        </div>
+        <div class="hero-stat">
+          <div class="number" id="hero-categories">5</div>
+          <div class="label">内容分类</div>
+        </div>
+        <div class="hero-stat">
+          <div class="number">24/7</div>
+          <div class="label">持续更新</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SEARCH BAR
+       ============================================ -->
+  <div class="search-bar" id="search-bar">
+    <div class="container">
+      <div class="search-inner">
+        <span class="search-icon">🔍</span>
+        <input
+          type="text"
+          id="search-input"
+          class="search-input"
+          placeholder="搜索文章标题、标签、正文内容…"
+          autocomplete="off"
+        />
+        <button class="search-clear" id="search-clear" aria-label="清除搜索">✕</button>
+        <span class="search-hint">共 <strong id="search-count">6</strong> 篇文章</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================
+       FILTER BAR
+       ============================================ -->
+  <div class="filter-bar" id="filter-bar">
+    <div class="container filter-inner" id="filter-inner">
+      <!-- Populated by JS -->
+    </div>
+  </div>
+
+  <!-- ============================================
+       ARTICLES SECTION
+       ============================================ -->
+  <section class="articles-section" id="articles">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">最新情报</h2>
+        <span style="color:var(--text-muted);font-size:0.85rem;" id="article-count"></span>
+      </div>
+      <div class="articles-grid" id="articles-grid">
+        <!-- Skeleton loading — replaced by JS -->
+        <div class="article-card">
+          <div class="card-thumb skeleton" style="height:180px;"></div>
+          <div class="card-body">
+            <div class="skeleton" style="width:50%;height:14px;margin-bottom:12px;"></div>
+            <div class="skeleton" style="width:100%;height:24px;margin-bottom:8px;"></div>
+            <div class="skeleton" style="width:90%;height:16px;margin-bottom:4px;"></div>
+            <div class="skeleton" style="width:70%;height:16px;"></div>
+          </div>
+        </div>
+        <div class="article-card">
+          <div class="card-thumb skeleton" style="height:180px;"></div>
+          <div class="card-body">
+            <div class="skeleton" style="width:50%;height:14px;margin-bottom:12px;"></div>
+            <div class="skeleton" style="width:100%;height:24px;margin-bottom:8px;"></div>
+            <div class="skeleton" style="width:90%;height:16px;margin-bottom:4px;"></div>
+            <div class="skeleton" style="width:70%;height:16px;"></div>
+          </div>
+        </div>
+        <div class="article-card">
+          <div class="card-thumb skeleton" style="height:180px;"></div>
+          <div class="card-body">
+            <div class="skeleton" style="width:50%;height:14px;margin-bottom:12px;"></div>
+            <div class="skeleton" style="width:100%;height:24px;margin-bottom:8px;"></div>
+            <div class="skeleton" style="width:90%;height:16px;margin-bottom:4px;"></div>
+            <div class="skeleton" style="width:70%;height:16px;"></div>
+          </div>
+        </div>
+        <div class="article-card">
+          <div class="card-thumb skeleton" style="height:180px;"></div>
+          <div class="card-body">
+            <div class="skeleton" style="width:50%;height:14px;margin-bottom:12px;"></div>
+            <div class="skeleton" style="width:100%;height:24px;margin-bottom:8px;"></div>
+            <div class="skeleton" style="width:90%;height:16px;margin-bottom:4px;"></div>
+            <div class="skeleton" style="width:70%;height:16px;"></div>
+          </div>
+        </div>
+        <div class="article-card">
+          <div class="card-thumb skeleton" style="height:180px;"></div>
+          <div class="card-body">
+            <div class="skeleton" style="width:50%;height:14px;margin-bottom:12px;"></div>
+            <div class="skeleton" style="width:100%;height:24px;margin-bottom:8px;"></div>
+            <div class="skeleton" style="width:90%;height:16px;margin-bottom:4px;"></div>
+            <div class="skeleton" style="width:70%;height:16px;"></div>
+          </div>
+        </div>
+        <div class="article-card">
+          <div class="card-thumb skeleton" style="height:180px;"></div>
+          <div class="card-body">
+            <div class="skeleton" style="width:50%;height:14px;margin-bottom:12px;"></div>
+            <div class="skeleton" style="width:100%;height:24px;margin-bottom:8px;"></div>
+            <div class="skeleton" style="width:90%;height:16px;margin-bottom:4px;"></div>
+            <div class="skeleton" style="width:70%;height:16px;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       NEWSLETTER CTA
+       ============================================ -->
+  <section class="newsletter-cta" id="newsletter">
+    <div class="container">
+      <div class="cta-card">
+        <h2>📡 不想错过任何 GTA 6 情报？</h2>
+        <p>加入我们的邮件列表，第一时间获取最新资讯、独家分析和社区热点。</p>
+        <form class="cta-form" id="newsletter-form">
+          <input type="email" placeholder="输入你的邮箱地址..." required>
+          <button type="submit" class="btn-primary">立即订阅</button>
+        </form>
+        <p style="font-size:0.75rem;color:var(--text-muted);margin-top:12px;">
+          不发送垃圾邮件，随时可以退订。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" style="margin-bottom:8px;">
+            <svg class="logo-icon-svg" viewBox="0 0 42 42" style="width:34px;height:34px;" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="logoGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:#FF0055"/>
+                  <stop offset="100%" style="stop-color:#FF00AA"/>
+                </linearGradient>
+              </defs>
+              <polygon points="21,2 38,12 38,30 21,40 4,30 4,12"
+                       fill="none" stroke="url(#logoGrad2)" stroke-width="2.5"/>
+              <text x="21" y="27" text-anchor="middle"
+                    fill="url(#logoGrad2)" font-family="Inter,sans-serif"
+                    font-weight="900" font-size="16" letter-spacing="-1">VI</text>
+            </svg>
+            <div class="logo-text" style="font-size:1.1rem;">
+              GTA <span class="accent">情报站</span>
+            </div>
+          </a>
+          <p>一个由 GTA 爱好者维护的独立资讯站点。我们追踪每一条关于《Grand Theft Auto VI》的可靠消息，为中文玩家社区提供深度分析与解读。</p>
+        </div>
+        <div class="footer-links">
+          <h4>导航</h4>
+          <a href="index.html">首页</a>
+          <a href="#articles">全部文章</a>
+          <a href="#newsletter">邮件订阅</a>
+        </div>
+        <div class="footer-links">
+          <h4>外部链接</h4>
+          <a href="https://www.rockstargames.com/VI" target="_blank" rel="noopener">Rockstar 官方</a>
+          <a href="https://www.take2games.com/" target="_blank" rel="noopener">Take-Two Interactive</a>
+          <a href="https://www.youtube.com/@RockstarGames" target="_blank" rel="noopener">Rockstar YouTube</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 GTA 6 情报站 · 用 <span class="heart">❤</span> 为 Vice City 而建 · 本站为粉丝站点，与 Rockstar Games 无关</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to top button -->
+  <button class="scroll-top" id="scroll-top" aria-label="回到顶部">↑</button>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
