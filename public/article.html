@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="GTA 6 情报站 — 详细文章阅读">
+  <meta name="theme-color" content="#0A0A1A">
+  <meta property="og:title" content="GTA 6 情报站 — 文章详情">
+  <meta property="og:description" content="GTA 6 最新情报深度解读">
+  <meta property="og:type" content="article">
+  <title>GTA 6 情报站 — 文章详情</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/atom-one-dark.min.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23FF0055'/%3E%3Cstop offset='100%25' style='stop-color:%23FF00AA'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpolygon points='18,1 34,10 34,26 18,35 2,26 2,10' fill='none' stroke='url(%23g)' stroke-width='2.5'/%3E%3Ctext x='18' y='23' text-anchor='middle' fill='url(%23g)' font-family='sans-serif' font-weight='900' font-size='15'%3EVI%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+  <!-- Subtle floating light particles (CSS-only) -->
+  <div class="particles-layer" aria-hidden="true"></div>
+
+  <!-- ============================================
+       HEADER / NAVIGATION
+       ============================================ -->
+  <header class="site-header scrolled" id="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <svg class="logo-icon-svg" viewBox="0 0 42 42" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:#FF0055"/>
+              <stop offset="100%" style="stop-color:#FF00AA"/>
+            </linearGradient>
+            <filter id="logoGlow">
+              <feGaussianBlur stdDeviation="1.2" result="blur"/>
+              <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+          </defs>
+          <polygon points="21,2 38,12 38,30 21,40 4,30 4,12"
+                   fill="none" stroke="url(#logoGrad)" stroke-width="2.5"
+                   filter="url(#logoGlow)"/>
+          <text x="21" y="27" text-anchor="middle"
+                fill="url(#logoGrad)" font-family="Inter,sans-serif"
+                font-weight="900" font-size="16" letter-spacing="-1">VI</text>
+        </svg>
+        <div class="logo-text">
+          GTA <span class="accent">情报站</span>
+          <span class="sub">◈ VICE CITY CALLING ◈</span>
+        </div>
+      </a>
+
+      <nav class="main-nav" id="main-nav">
+        <a href="index.html" class="nav-link">首页</a>
+        <a href="index.html#articles" class="nav-link">文章</a>
+        <a href="index.html#newsletter" class="nav-link">订阅</a>
+        <a href="https://www.rockstargames.com/VI" class="nav-link" target="_blank" rel="noopener">官方站点 ↗</a>
+      </nav>
+
+      <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="菜单">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============================================
+       ARTICLE DETAIL
+       ============================================ -->
+  <main class="article-detail">
+    <div class="container" id="article-detail-container">
+      <!-- Skeleton loading -->
+      <div class="skeleton" style="width:30%;height:16px;margin-bottom:32px;"></div>
+      <div class="skeleton" style="width:80px;height:28px;border-radius:14px;margin-bottom:16px;"></div>
+      <div class="skeleton" style="width:100%;height:48px;margin-bottom:12px;"></div>
+      <div class="skeleton" style="width:70%;height:48px;margin-bottom:24px;"></div>
+      <div class="skeleton" style="width:40%;height:16px;margin-bottom:40px;"></div>
+      <div class="skeleton" style="width:100%;height:18px;margin-bottom:10px;"></div>
+      <div class="skeleton" style="width:100%;height:18px;margin-bottom:10px;"></div>
+      <div class="skeleton" style="width:95%;height:18px;margin-bottom:10px;"></div>
+      <div class="skeleton" style="width:88%;height:18px;margin-bottom:30px;"></div>
+      <div class="skeleton" style="width:100%;height:18px;margin-bottom:10px;"></div>
+      <div class="skeleton" style="width:92%;height:18px;margin-bottom:10px;"></div>
+      <div class="skeleton" style="width:85%;height:18px;margin-bottom:10px;"></div>
+    </div>
+
+    <!-- Related articles -->
+    <div class="container" id="related-articles">
+      <!-- Populated by JS -->
+    </div>
+  </main>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" style="margin-bottom:8px;">
+            <svg class="logo-icon-svg" viewBox="0 0 42 42" style="width:34px;height:34px;" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="logoGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:#FF0055"/>
+                  <stop offset="100%" style="stop-color:#FF00AA"/>
+                </linearGradient>
+              </defs>
+              <polygon points="21,2 38,12 38,30 21,40 4,30 4,12"
+                       fill="none" stroke="url(#logoGrad2)" stroke-width="2.5"/>
+              <text x="21" y="27" text-anchor="middle"
+                    fill="url(#logoGrad2)" font-family="Inter,sans-serif"
+                    font-weight="900" font-size="16" letter-spacing="-1">VI</text>
+            </svg>
+            <div class="logo-text" style="font-size:1.1rem;">
+              GTA <span class="accent">情报站</span>
+            </div>
+          </a>
+          <p>一个由 GTA 爱好者维护的独立资讯站点。我们追踪每一条关于《Grand Theft Auto VI》的可靠消息，为中文玩家社区提供深度分析与解读。</p>
+        </div>
+        <div class="footer-links">
+          <h4>导航</h4>
+          <a href="index.html">首页</a>
+          <a href="index.html#articles">全部文章</a>
+          <a href="index.html#newsletter">邮件订阅</a>
+        </div>
+        <div class="footer-links">
+          <h4>外部链接</h4>
+          <a href="https://www.rockstargames.com/VI" target="_blank" rel="noopener">Rockstar 官方</a>
+          <a href="https://www.take2games.com/" target="_blank" rel="noopener">Take-Two Interactive</a>
+          <a href="https://www.youtube.com/@RockstarGames" target="_blank" rel="noopener">Rockstar YouTube</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 GTA 6 情报站 · 用 <span class="heart">❤</span> 为 Vice City 而建 · 本站为粉丝站点，与 Rockstar Games 无关</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to top -->
+  <button class="scroll-top" id="scroll-top" aria-label="回到顶部">↑</button>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
