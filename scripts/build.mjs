@@ -30,6 +30,8 @@ marked.setOptions({
 // =============================================
 
 function parseFrontmatter(raw) {
+  // Normalize line endings to LF (handle CRLF from Windows)
+  raw = raw.replace(/\r\n/g, '\n').replace(/\r/g, '\n');
   // Match YAML-style frontmatter delimited by ---
   const RE = /^---\s*\n([\s\S]*?)\n---\s*\n([\s\S]*)$/;
   const m = raw.match(RE);
