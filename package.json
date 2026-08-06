@@ -5,6 +5,8 @@
   "type": "module",
   "scripts": {
     "build": "node scripts/build.mjs && node scripts/copy-static.mjs",
+    "deploy": "npm run build && node scripts/deploy.mjs",
+    "admin": "node scripts/admin-server.mjs",
     "dev": "npx serve ."
   },
   "dependencies": {
